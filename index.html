@@ -8,29 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="root">
+        <!-- Image container -->
+        <section id="current-image-container"></section>
 
-    <div class="container">
-    
-        <h1 id="heading">NASA Picture Of The Day</h1>
-        
-        <!-- current picture -->
-        <div id="main-image-container"><div id="current-image-container"></div></div>
+        <!-- Form for the date -->
+        <section class="search">
+            <h3>Search For a Picture of the Day</h3>
+            <form id="search-form">
+                <label for="search-input">Select a date: </label>
+                <input type="date" name="date" id="search-input">
+                <input type="button" value="Search" id = "search">
+            </form>
+        </section>
 
-        <h2>Search For Picture Of the Day</h2>
-
-        <!-- search form -->
-        <form action="" id="search-form">
-            <label for="search-input">Select a Date <input type="date" id="search-input"></label>
-            <button>Submit</button>
-        </form>
-
-        <!-- previous search -->
-        <h2>Previous Search</h2>
-        <ul id="search-history"></ul>
-
+        <!-- Search history -->
+        <section class="history">
+            <h3>Previous searches</h3>
+            <ul id="search-history"></ul>
+        </section>
     </div>
-
-
-    <script src="index.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
